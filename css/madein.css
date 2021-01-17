@@ -1,0 +1,146 @@
+@charset "utf-8";
+/*
+CSS : madein
+by : firman
+
+*/
+
+body {
+        margin: 0;
+        padding: 20px 0 0 0;
+		background: url(../img/twr.jpg) no-repeat;
+		background-size: cover;
+		background-repeat:repeat-y;
+		-webkit-background-size: cover; 
+		-moz-background-size: cover; 
+		-o-background-size: cover;
+}
+ 
+#main {	
+	height:auto;
+	border-radius:7px;
+    width:900px;
+    margin:0 auto;
+	margin-top:100px;
+    font-family: helvetica, arial, sans-serif;
+    font-size: 10pt;
+        
+}
+#form{
+	
+	float:right;}
+
+#content{
+	width:870px;
+	margin:0 auto;
+	border-radius:15px;
+	padding:7px;
+	height: auto;
+/*	-moz-box-shadow: #000 4px 4px 20px;
+    -webkit-box-shadow: #000 4px 4px 20px;*/
+	background-color:transparent;
+	}
+/*#header{
+	height: 200px;}
+#gambar{
+	height:180px;
+	width:150px;
+	float:left;
+	padding:0px;
+	margin:18px;
+	}
+#notic{
+	margin-right:5px;
+	height:180px;
+	width:700px;
+	float:right;}
+
+#cont{
+	margin-top:29px; }
+#fother{
+	margin-bottom:10px;}
+
+.log{ 
+margin-top:5px;
+margin-left:30px;
+width:200px;
+height:auto;
+border-radius:5px;
+float:left;
+}
+.teks{
+	padding:7px;
+	width:600px;
+	float:right;
+	border-radius:5px;}
+.all{
+	color:#FFF;}*/
+.input {
+
+	padding:13px;
+	background-color:transparent;
+	border-radius:9px;
+	border:2px solid;
+	color:#fff;
+	-moz-box-shadow: #000 4px 4px 20px;
+	width:100%;}
+.input:hover{
+	border-collapse:collapse;
+	border-color: #FF0;
+}
+.input:active{
+border-color: darkgreen ;
+} 
+/*.bnt{padding:10px; width:150px; border-radius:10px;font-weight:bold; cursor: pointer;
+	background: #CCC;
+	background: -moz-linear-gradient(top, #CCC,#fff);
+	background: -ms-linear-gradient(top,  #CCC,#fff);
+	background: -o-linear-gradient(top,  #CCC,#fff);
+	background: -webkit-linear-gradient(top,  #CCC,#fff);
+	background: linear-gradient(top, #CCC,#fff);
+	color:#000;}*/
+.download{
+	font-weight:bold; 
+	cursor: pointer; 
+	width:200px; 
+	border:none;
+	border-radius:10px;
+	padding:15px 40px!important;
+	background:#6319AC;
+	color:#fff!important;
+	font:400 14px/18px &#39;Ubuntu&#39;,sans-serif;
+	text-align:center;
+	text-shadow:0 0 1px rgba(0,0,0,0.3);
+	transition:background-color 1s ease-out 0s;
+	letter-spacing:1px}
+
+.download:hover{background:#454242;text-shadow:0 0 1px #222;text-decoration:none}
+
+.play:hover{background:#66FF33;text-shadow:0 0 1px #222;text-decoration:none}
+
+/*.img{float:right;}
+
+li a:hover{
+	text-decoration:none;
+	background:url(../img/hover.png);
+	width:10px;}*/
+@media only screen and (max-width: 1024px) {
+    /* Desktop, Tablet & Mobile. */
+	#main{}
+	#content{}
+	#form{}
+}
+@media only screen and (max-width: 767px) {
+    /* Tablet (Portrait) */
+	#main{width:100%;}
+	#content{ margin:auto; width:70%;}
+	#form{}
+}
+@media only screen and (max-width: 479px) {
+    /* Mobile */
+
+	#main{margin-top:0px; width:70%;
+		}
+	#content{ width:100%;}
+	#form{width:100%;}
+}

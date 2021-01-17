@@ -1,0 +1,188 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>simpel login</title>
+<link href="css/madein.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+@charset "utf-8";
+/*
+CSS : madein
+by : firman
+
+*/
+
+body {
+        margin: 0;
+        padding: 20px 0 0 0;
+		background: url(img/twr.jpg) no-repeat;
+		background-size: cover;
+		background-repeat:repeat-y;
+		-webkit-background-size: cover; 
+		-moz-background-size: cover; 
+		-o-background-size: cover;
+}
+ 
+#main {	
+	height:auto;
+	border-radius:7px;
+    width:900px;
+    margin:0 auto;
+	margin-top:100px;
+    font-family: helvetica, arial, sans-serif;
+    font-size: 10pt;
+        
+}
+#form{
+	
+	float:right;}
+
+#content{
+	width:870px;
+	margin:0 auto;
+	border-radius:15px;
+	padding:7px;
+	height: auto;
+/*	-moz-box-shadow: #000 4px 4px 20px;
+    -webkit-box-shadow: #000 4px 4px 20px;*/
+	background-color:transparent;
+	}
+.input {
+
+	padding:13px;
+	background-color:transparent;
+	border-radius:9px;
+	border:2px solid;
+	color:#fff;
+	-moz-box-shadow: #000 4px 4px 20px;
+	width:100%;}
+.input:hover{
+	border-collapse:collapse;
+	border-color: #FF0;
+}
+.input:active{
+border-color: darkgreen ;
+}
+.download{
+	font-weight:bold; 
+	cursor: pointer; 
+	width:200px; 
+	border:none;
+	border-radius:10px;
+	padding:15px 40px!important;
+	background:#6319AC;
+	color:#fff!important;
+	font:400 14px/18px &#39;Ubuntu&#39;,sans-serif;
+	text-align:center;
+	text-shadow:0 0 1px rgba(0,0,0,0.3);
+	transition:background-color 1s ease-out 0s;
+	letter-spacing:1px}
+
+.download:hover{background:#454242;text-shadow:0 0 1px #222;text-decoration:none}
+
+.play:hover{background:#66FF33;text-shadow:0 0 1px #222;text-decoration:none}
+@media only screen and (max-width: 1024px) {
+    /* Desktop, Tablet & Mobile. */
+	#main{}
+	#content{}
+	#form{}
+}
+@media only screen and (max-width: 767px) {
+    /* Tablet (Portrait) */
+	#main{width:100%;}
+	#content{ margin:auto; width:70%;}
+	#form{}
+}
+@media only screen and (max-width: 479px) {
+    /* Mobile */
+
+	#main{margin-top:0px; width:70%;
+		}
+	#content{ width:100%;}
+	#form{width:100%;}
+}
+
+</style>
+</head>
+
+<body>
+
+<div id="main"><!--div-Main-->
+
+	<div id="content"><!--div-Content-->
+    <center><h1><span style="color:#fff;">Portal</span> <span style="color:#F63; font-weight:bold;">Nuansa Indah Net</span></h1></center>	    
+		<div id="form">
+        <h1 style="font-family: Aharoni; font-size:30px; color:#fff">SILAHKAN LOGIN</h1>
+        <article style="margin:5px;">
+        
+
+        <!--starmik-->
+ $(if chap-id)
+	<form name="sendin" action="$(link-login-only)" method="post">
+		<input type="hidden" name="username" />
+		<input type="hidden" name="password" />
+		<input type="hidden" name="dst" value="$(link-orig)" />
+		<input type="hidden" name="popup" value="true" />
+	</form>
+	
+	<script type="text/javascript" src="/md5.js"></script>
+	<script type="text/javascript">
+	<!--
+	    function doLogin() {
+		document.sendin.username.value = document.login.username.value;
+		document.sendin.password.value = hexMD5('$(chap-id)' + document.login.password.value + '$(chap-challenge)');
+		document.sendin.submit();
+		return false;
+	    }
+	//-->
+	</script>
+$(endif)
+
+<div align="center">
+<a href="$(link-login-only)?target=lv&amp;dst=$(link-orig-esc)">Latviski</a>
+</div>
+
+		<div align="center" class="notice" style="color: #c1c1c1; font-size: 9px"><br />$(if trial == 'yes')Gratis Untuk Demo, <a style="color: #FF8080"href="$(link-login-only)?dst=$(link-orig-esc)&amp;username=T-$(mac-esc)">Klik Disini</a>.$(endif)</div><br />
+
+					<form name="login" action="$(link-login-only)" method="post" $(if chap-id) onSubmit="return doLogin()" $(endif)>
+                    <input type="hidden" name="dst" value="$(link-orig)" />
+<h2 style="color:#FFF">Silahkan Login</h2>
+					<input type="hidden" name="popup" value="true" />
+					<div id="form-login">
+					<div id="form-field-wrap">
+					<div id="form-field" >
+
+					<input type="text" class="input" id="username-login" name="username" placeholder="Username"><br /><br />
+										<!--<input type="hidden" class="username" id="username_hidden" name="username" value="$(username)">-->
+					</div>
+					<div id="form-field" class="password-login">
+					<input type="text" class="input"  id="pass-login" name="password" placeholder="Password"><br /><br />
+					<input type="hidden" id="tsel" name="tsel" value="8">
+					</div>
+					</div>
+					<div id="login-btn" >
+					<input type="submit" class="download" value="LOGIN"  />
+					</div>
+					</div>
+<!--end mik-->                    
+<div style="color: #c1c1c1; font-size: 9px"></div>
+	<center>$(if error)<br /><div style="color: #FF8080; font-size: 6px">$(error)</div>$(endif)</center>
+
+
+<script type="text/javascript">
+<!--
+  document.login.username.focus();
+//-->
+</script>
+
+<!--end mik--></form>
+        
+		
+        </article>
+        </div>
+        
+    </div><!--End-div-Content-->
+</div><!--End-div-Main-->
+</body>
+</html>
