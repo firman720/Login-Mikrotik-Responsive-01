@@ -16,20 +16,8 @@ Free Edit.
 Silahkan sebarkan, cantumkan link blog sumbernya,
 Semua di unduh Gratis, mohon tidak disalah gunakan.
 
-Tdk menutup kemungkinan,
-kami juga menerima donasi anda, berapapun jumlahnya.
 
-Bank : BRI
-No Rek : 1009540039
-AN : TOYYIBAH
-
-______________________
-BNI Syariah
-No : 0352668669
-AN: Firman Arrosyid
-______________________
-
-atau dengan clik iklan di web kami
+clik iklan di web kami
 
 
 Trimakasih
